@@ -1,11 +1,10 @@
-import { Children } from "react";
 import style from "./profile.module.css";
 
-const Profile = ({ Children, imgSrc, imgAlt }) => {
+const Profile = ({ children, imgSrc, imgAlt }) => {
   return (
     <div id={style.profile}>
       <img src={imgSrc} alt={imgAlt} />
-      <p>{Children}</p>
+      <p>{children}</p>
     </div>
   );
 };
