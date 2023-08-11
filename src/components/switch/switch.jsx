@@ -1,12 +1,19 @@
 import styles from "./switch.module.css";
+import { useSpring } from "react-spring"
 
-const Switch =() =>{
-    return(
-        <div id={styles.switch}>
-            <button></button>
-            <span></span>
-        </div>
-    )
-}
 
-export default Switch
+
+
+const Switch = ({ mode, infoButton }) => {
+    const animation = useSpring({
+        left: infoButton ? "0%" : "50%"
+    });
+  return (
+    <div id={styles.switch} onClick={mode}>
+      <animated.button style={animation}></animated.button>
+      <span></span>
+    </div>
+  );
+};
+
+export default Switch;
