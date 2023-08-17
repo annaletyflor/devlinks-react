@@ -1,5 +1,5 @@
 import styles from "./switch.module.css";
-import { useSpring } from "react-spring"
+import { useSpring, animated } from "react-spring"
 
 
 

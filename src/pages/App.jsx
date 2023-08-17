@@ -25,7 +25,7 @@ const App = () => {
         <Profile imgSrc={imgSrc} imgAlt={imgAlt}>
           @Flocky
         </Profile>
-        <Switch mode={toggleMode} />
+        <Switch mode={toggleMode} infoButton={isLightMode} />
         <div id="links">
           <ul>
             <Links link={"https://github.com/annaletyflor"}>GitHub</Links>
